@@ -1,0 +1,84 @@
+
+.slideContainer {
+    height: 60%;
+    width: 60%;
+    position: relative;
+    align-items: center;
+    margin: auto;
+
+}
+.slideComponent {
+    height: 100%;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 20px 20px 50px rgba($color: #000000, $alpha: 0.5);
+    transition: all .6s ease-out;
+    transform-style: preserve-3d;
+    background-color: midnightblue;
+    display: flex;
+
+    .material-symbols-outlined {
+        color: #fff;
+        position: absolute;
+        top: 45%;
+        right: 0;
+        font-size: 60px;
+        font-weight: 800;
+        transform: translateZ(40px) translateX(100);
+        box-shadow: 20px 20px 50px rgba($color: #000000, $alpha: 0.5);
+        background-color: transparent;
+    }
+}
+
+.slideComponentText {
+    transform: translateZ(40px);
+    color: #fff;
+    font-size: 240px;
+    margin: auto;
+}
+
+.projectDescript {
+    width: 600px;
+    height: 300px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateZ(40px);
+    transform: translateX(80px) translateY(80px);
+    border-radius: 10px;
+    box-shadow: 20px 20px 50px rgba($color: #000000, $alpha: 0.5);
+}
+
+.slideComponent:hover {
+    transition: all 1s linear;
+    transform: scale(1.05);
+}
+
+.s_over{
+    width: 33.333%;
+    height: 33.333%;
+    position: absolute;
+    z-index: 1;
+}
+
+.s_over:nth-child(1){ left: 0; top: 0;}
+.s_over:nth-child(2){ left: 33.333%; top: 0;}
+.s_over:nth-child(3){ left: 66.666%; top: 0;}
+.s_over:nth-child(4){ left: 0; top: 33.333%;}
+.s_over:nth-child(5){ left: 33.333%; top: 33.333%0;}
+.s_over:nth-child(6){ left: 66.666%; top: 33.333%;}
+.s_over:nth-child(7){ left: 0; top: 66.666%;}
+.s_over:nth-child(8){ left: 33.333%; top: 66.666%;}
+.s_over:nth-child(9){ left: 66.666%; top: 66.666%;}
+
+.s_over:nth-child(1):hover ~ .slideComponent{ transform: rotateX(-8.5deg) rotateY(8.5deg)}
+.s_over:nth-child(2):hover ~ .slideComponent{ transform: rotateX(-8.5deg) rotateY(0deg)}
+.s_over:nth-child(3):hover ~ .slideComponent{ transform: rotateX(-8.5deg) rotateY(-8.5deg)}
+.s_over:nth-child(4):hover ~ .slideComponent{ transform: rotateX(0deg) rotateY(8.5deg)}
+.s_over:nth-child(5):hover ~ .slideComponent{ transform: rotateX(0deg) rotateY(0deg)}
+.s_over:nth-child(6):hover ~ .slideComponent{ transform: rotateX(0deg) rotateY(-8.5deg)}
+.s_over:nth-child(7):hover ~ .slideComponent{ transform: rotateX(8.5deg) rotateY(8.5deg)}
+.s_over:nth-child(8):hover ~ .slideComponent{ transform: rotateX(8.5deg) rotateY(0deg)}
+.s_over:nth-child(9):hover ~ .slideComponent{ transform: rotateX(8.5deg) rotateY(-8.5deg)}
