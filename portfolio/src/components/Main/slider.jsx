@@ -32,6 +32,7 @@ const ImageSlider = ({slides}) => {
             <div className='slideComponent'>
                 <img style={{ backgroundImage: `url(${slides[currentIndex].url})` }}></img>
                 <div className="slideComponentText">Tilt Effect</div>
+                <div className='learnMoreText'>Click <span>here</span> to learn more about Stype</div>
                 <span class="material-symbols-outlined" id='frontArrow' onClick={nextFunction}>arrow_forward_ios</span>
                 <span class="material-symbols-outlined" id='backArrow' onClick={backFunction}>arrow_back_ios</span>
                 <div className="projectDescript">
