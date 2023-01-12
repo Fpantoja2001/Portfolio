@@ -27,3 +27,4 @@ const ImageSlider = ({slides}) => {
 export default ImageSlider
 
 // style={{backgroundImage:`url(${slides[currentIndex].url})`}}
+// hello
