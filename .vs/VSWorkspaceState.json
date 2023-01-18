@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\portfolio",
-    "\\portfolio\\public"
+    "\\portfolio\\src",
+    "\\portfolio\\src\\components",
+    "\\portfolio\\src\\components\\Projects"
   ],
-  "SelectedNode": "\\portfolio\\public\\index.html",
+  "SelectedNode": "\\portfolio\\src\\App.css",
   "PreviewInSolutionExplorer": false
 }
